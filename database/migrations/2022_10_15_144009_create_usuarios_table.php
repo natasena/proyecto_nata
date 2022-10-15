@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
-            $table->string("Nombre");
+            $table->string("nombre");
             $table->integer("tipo_documento");
-            $table->string("Contraseña");
+            $table->string("contraseña");
             
             $table->foreignId('cargos_id')->constrained('cargos');
             $table->timestamps();

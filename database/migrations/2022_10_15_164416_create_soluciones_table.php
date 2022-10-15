@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('soluciones', function (Blueprint $table) {
             $table->id();
             $table->string("id_pqrs");
-            $table->date("Fecha_solucion");
-            $table->string("Descripcion");
-            $table->string("Estado");
+            $table->date("fecha_solucion");
+            $table->string("descripcion");
+            $table->string("estado");
 
             $table->foreignId('pqrs_id')->constrained('pqrs');
             $table->foreignId('empleado_id')->constrained('usuarios');

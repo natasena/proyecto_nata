@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string("id_empresa");
             $table->integer("id_persona");
             $table->string("id_tipo");
-            $table->date("Fecha_radicacion");
-            $table->date("Fecha_solucion");
-            $table->string("Descripción");
-            $table->string("Estado");
+            $table->date("fecha_radicacion");
+            $table->date("fecha_solucion");
+            $table->string("descripción");
+            $table->string("estado");
 
             $table->foreignId('tipopqrs_id')->constrained('tipopqrs');
             $table->foreignId('empresa_id')->constrained('empresas');
